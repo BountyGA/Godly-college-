@@ -18,9 +18,7 @@
     
     <link rel="canonical" href="https://godlyschools.edu.ng/">
     <link rel="icon" type="image/png" href="logo-BR5ENh1K.jpg" />
-    <!-- index module -->
-	 <script src="./main.js"></script>
-	 
+    <!-- index module --> 
 	 <link rel="stylesheet" href="index-DA465R1d.css">
    
   
@@ -35,16 +33,28 @@
   
 
 
-<script src="./index-CioFnrzV.js"></script>
-	  <script>
-    console.log("Script loaded at:", new Date().toISOString());
-    console.log("Document readyState:", document.readyState);
+   <script src="./index-CioFnrzV.js"></script>
     
-    // Check if hamburger button exists
-    setTimeout(function() {
-        const menuBtn = document.querySelector('[aria-label="Toggle menu"]');
-        console.log("Hamburger button:", menuBtn);
-        console.log("Button onclick:", menuBtn?.onclick);
-    }, 100);
-</script>
+    <!-- Debug script (optional) -->
+    <script>
+        console.log("Website loaded successfully!");
+        console.log("JavaScript bundle loaded at:", new Date().toISOString());
+        
+        // Test if hamburger button exists and works
+        setTimeout(function() {
+            const menuBtn = document.querySelector('[aria-label="Toggle menu"]');
+            console.log("Hamburger button found:", menuBtn);
+            
+            if (menuBtn) {
+                // Add a test click handler
+                menuBtn.addEventListener('click', function() {
+                    console.log("Menu button clicked - JavaScript is working!");
+                });
+                
+                console.log("Test: Try clicking the hamburger menu");
+            } else {
+                console.error("Hamburger button not found!");
+            }
+        }, 500);
+    </script>
 </body></html>
