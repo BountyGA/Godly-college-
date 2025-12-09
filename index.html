@@ -19,7 +19,8 @@
     <link rel="canonical" href="https://godlyschools.edu.ng/">
     <link rel="icon" type="image/png" href="logo-BR5ENh1K.jpg" />
     <!-- index module -->
-	 <script src="./index-CioFnrzV.js"></script>
+	 <script src="./main.js"></script>
+	 
 	 <link rel="stylesheet" href="index-DA465R1d.css">
    
   
@@ -34,5 +35,16 @@
   
 
 
-
+<script src="./index-CioFnrzV.js"></script>
+	  <script>
+    console.log("Script loaded at:", new Date().toISOString());
+    console.log("Document readyState:", document.readyState);
+    
+    // Check if hamburger button exists
+    setTimeout(function() {
+        const menuBtn = document.querySelector('[aria-label="Toggle menu"]');
+        console.log("Hamburger button:", menuBtn);
+        console.log("Button onclick:", menuBtn?.onclick);
+    }, 100);
+</script>
 </body></html>
